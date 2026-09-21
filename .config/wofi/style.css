@@ -6,7 +6,6 @@
     font-family: 'JetBrains Mono', monospace;
     font-size: 18px;
     text-shadow: none;
-    background-color: transparent;
 }
 
 /* === Main Window === */
@@ -20,6 +19,7 @@ window {
     radial-gradient(circle at bottom left,  alpha(@color1,0.35), transparent 70%),
     radial-gradient(circle at bottom right, alpha(@color1,0.35), transparent 70%),
     alpha(@background,0.85);
+    background-color: rgba(69, 50, 59, 0.7);
 }
 
 /* === Layout === */
@@ -49,6 +49,7 @@ window {
 #input image {
     color: @color1;
     padding-right: 10px;
+    color: rgb(232, 170, 199);
 }
 
 /* === Item list === */
@@ -67,13 +68,14 @@ window {
 
 /* Highlight item */
 #entry:selected {
-    background-color: alpha(@color1, 0.2); /* warna highlight */
-    border: 1px solid @color1;
-    box-shadow: 0 0 8px alpha(@color1, 0.3);
+    background-color: rgba(232, 170, 199, .4); /* warna highlight */
+    border: 2px solid rgb(232, 170, 199);
+    box-shadow: 1px 1px 5px rgb(232, 170, 199);
 }
 #entry:selected #text {
     color: @color1;
     font-weight: bold;
+    color: rgb(232, 170, 199);
 }
 
 /* Arrow icon */
